@@ -5,14 +5,27 @@
   --darkbd-fontcolor: #fff;
   --shadowfontcolor: #757575;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: #fff;
   color: var(--mainfontcolor);
+  margin: 0;
+}
+.wrapper{
+  width: 100%;
 }
 .menu {
   text-decoration: none;
+  display: flex;
+  gap: 23px;
+  align-items: baseline;
+  justify-content: space-around;
 }
 .submenu {
   font-weight: 500;
@@ -21,6 +34,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--mainfontcolor);
   text-decoration: none;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
 }
 .submenu:hover,
 .submenu:focus {
@@ -60,12 +76,15 @@ body {
   text-align: left;
 }
 .contacts {
+  display: block;
   font-weight: 500;
   font-size: var(--mainfont-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--shadowfontcolor);
   text-decoration: none;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .contacts:hover,
 .contacts:focus {
@@ -110,6 +129,7 @@ body {
   text-align: left;
   color: black;
   text-decoration: none;
+  margin-right: 93px;
 }
 .pic-text {
   font-size: 16px;
@@ -129,9 +149,17 @@ body {
 }
 .footer-bg {
   background: #2f303a;
+  min-height: 252px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-left: 13%;
+  
 }
 .mainbgcolor {
   background: #2f303a;
+  height: 600px;
+  padding-top: 200px;
 }
 .mainbtn {
   background-color: var(--focus-active-hovercolor);
@@ -142,9 +170,18 @@ body {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-right: 50%;
+  margin-left: 43%;
+  width: 200px;
+  height: 50px;
 }
 .list-style {
   list-style: none;
+  display: flex;
+  gap: 25px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  
 }
 .text-title {
   font-weight: 700;
@@ -187,5 +224,11 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--darkbd-fontcolor);
+  color: var(--darkbd-fontcolor); 
+}
+.head-container{
+  display: flex;
+  width: 1600px;
+  min-height: 80px;
+  justify-content: space-around;
 }

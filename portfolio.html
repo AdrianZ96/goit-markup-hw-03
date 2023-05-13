@@ -17,16 +17,20 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="head-container">
+      <header class="head-container nav-border">
         <nav class="menu">
-          <a href="index.html" class="head-logo submenu"
-            ><p class="head-logo submenu">
-              <span class="webname">Web</span>Studio
-            </p>
-          </a>
-          <a href="#example" class="submenu">Agencja</a>
-          <a href="portfolio.html" class="submenu">Portfolio</a>
-          <a href="#contact" class="submenu">Kontakt</a>
+          <menu class="header-nav">
+            <li>
+              <a href="index.html" class="head-logo submenu"
+                ><p class="head-logo submenu">
+                  <span class="webname">Web</span>Studio
+                </p>
+              </a>
+            </li>
+            <li><a href="#example" class="submenu">Agencja</a></li>
+            <li><a href="portfolio.html" class="submenu">Portfolio</a></li>
+            <li><a href="#contact" class="submenu">Kontakt</a></li>
+          </menu>
         </nav>
         <ul class="list-style">
           <li>
@@ -39,8 +43,9 @@
           </li>
         </ul>
       </header>
-      <main>
-        <ul class="pagenav list-style">
+
+      <main class="main-content-color">
+        <ul class="pagenav section">
           <li>
             <button type="button" class="navbutton">Wszystkie</button>
           </li>
@@ -57,7 +62,7 @@
             <button type="button" class="navbutton">Markieting</button>
           </li>
         </ul>
-        <div class="pic-box">
+        <div class="pic-box section">
           <figure class="pictures">
             <img src="./images/book.jpg" width="370" height="294" />
             <figcaption class="pic-text">
@@ -123,7 +128,8 @@
           </figure>
         </div>
       </main>
-      <footer class="footer-bg">
+
+      <footer class="footer-bg section">
         <a href="#main" class="footer-logo"
           ><p><span class="webname">Web</span>Studio</p>
         </a>

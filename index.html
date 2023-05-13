@@ -20,17 +20,21 @@
   </head>
 
   <body>
-    <div class="wrapper">
-      <header class="head-container">
+    <div class="container">
+      <header class="head-container section">
         <nav class="menu">
-          <a href="index.html" class="head-logo submenu"
-            ><p class="head-logo submenu">
-              <span class="webname">Web</span>Studio
-            </p>
-          </a>
-          <a href="#example" class="submenu">Agencja</a>
-          <a href="portfolio.html" class="submenu">Portfolio</a>
-          <a href="#contact" class="submenu">Kontakt</a>
+          <menu class="header-nav">
+            <li>
+              <a href="index.html" class="head-logo submenu"
+                ><p class="head-logo submenu">
+                  <span class="webname">Web</span>Studio
+                </p>
+              </a>
+            </li>
+            <li><a href="#example" class="submenu">Agencja</a></li>
+            <li><a href="portfolio.html" class="submenu">Portfolio</a></li>
+            <li><a href="#contact" class="submenu">Kontakt</a></li>
+          </menu>
         </nav>
         <ul class="list-style">
           <li>
@@ -44,113 +48,131 @@
         </ul>
       </header>
       <main>
-        <div class="mainbgcolor">
+        <div class="mainbgcolor section">
           <h1 class="main-header">EFEKTOWNE ROZWIĄZANIE DLA WASZEGO BIZNESU</h1>
           <button type="button" class="mainbtn">Zamów usługę</button>
         </div>
-        <section class="about">
-          <h4 class="text-title">Lorem ipsum</h4>
-          <p class="text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam
-            expedita id blanditiis, sit ullam porro illum suscipit veritatis?
-            Repellat.
-          </p>
-        </section>
-        <section>
-          <h4 class="text-title">Lorem ipsum</h4>
-          <p class="text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam
-            expedita id blanditiis, sit ullam porro illum suscipit veritatis?
-            Repellat.
-          </p>
-        </section>
-        <section>
-          <h4 class="text-title">Lorem ipsum</h4>
-          <p class="text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam
-            expedita id blanditiis, sit ullam porro illum suscipit veritatis?
-            Repellat.
-          </p>
-        </section>
-        <section>
-          <h4 class="text-title">Lorem ipsum</h4>
-          <p class="text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam
-            expedita id blanditiis, sit ullam porro illum suscipit veritatis?
-            Repellat.
-          </p>
-        </section>
-        <h2 class="head-text">Czym się zajmujemy</h2>
-        <div>
-          <img
-            src="images/work1.jpg"
-            alt="Kodowanie"
-            width="370"
-            height="294" />
-          <img
-            src="images/work2.jpg"
-            alt="Debugowanie aplikacji"
-            width="370"
-            height="294" />
-          <img
-            src="images/work3.jpg"
-            alt="Projektowanie stylów"
-            width="370"
-            height="294" />
+        <div class="body-style">
+          <div class="upper-body section">
+            <section>
+              <ul class="about">
+                <li>
+                  <h4 class="text-title">Lorem ipsum</h4>
+                  <p class="text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Laboriosam expedita id blanditiis, sit ullam porro illum
+                    suscipit veritatis? Repellat.
+                  </p>
+                </li>
+
+                <li>
+                  <h4 class="text-title">Lorem ipsum</h4>
+                  <p class="text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Laboriosam expedita id blanditiis, sit ullam porro illum
+                    suscipit veritatis? Repellat.
+                  </p>
+                </li>
+
+                <li>
+                  <h4 class="text-title">Lorem ipsum</h4>
+                  <p class="text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Laboriosam expedita id blanditiis, sit ullam porro illum
+                    suscipit veritatis? Repellat.
+                  </p>
+                </li>
+
+                <li>
+                  <h4 class="text-title">Lorem ipsum</h4>
+                  <p class="text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Laboriosam expedita id blanditiis, sit ullam porro illum
+                    suscipit veritatis? Repellat.
+                  </p>
+                </li>
+              </ul>
+            </section>
+            <section class="img-bg section">
+              <h2 class="head-text">Czym się zajmujemy</h2>
+              <div class="images">
+                <img
+                  src="images/work1.jpg"
+                  alt="Kodowanie"
+                  width="370"
+                  height="294" />
+                <img
+                  src="images/work2.jpg"
+                  alt="Debugowanie aplikacji"
+                  width="370"
+                  height="294" />
+                <img
+                  src="images/work3.jpg"
+                  alt="Projektowanie stylów"
+                  width="370"
+                  height="294" />
+              </div>
+            </section>
+          </div>
+
+          <div class="lower-body section">
+            <section>
+              <p class="head-text">Nasz zespół</p>
+              <div class="workers">
+                <figure class="team-card">
+                  <img
+                    src="images/person1.jpg"
+                    alt="Product Desinger"
+                    width="270"
+                    height="260" />
+
+                  <figcaption>
+                    <p class="pic-people">John Doe</p>
+                    <p class="ppl-jobs">Product Desinger</p>
+                  </figcaption>
+                </figure>
+                <figure class="team-card">
+                  <img
+                    src="images/person2.jpg"
+                    alt="Frontend Developer"
+                    width="270"
+                    height="260" />
+
+                  <figcaption>
+                    <p class="pic-people">John Doe</p>
+                    <p class="ppl-jobs">Frontend Developer</p>
+                  </figcaption>
+                </figure>
+                <figure class="team-card">
+                  <img
+                    src="images/person3.jpg"
+                    alt="Marketing"
+                    width="270"
+                    height="260" />
+
+                  <figcaption>
+                    <p class="pic-people">John Doe</p>
+                    <p class="ppl-jobs">Marketing</p>
+                  </figcaption>
+                </figure>
+                <figure class="team-card">
+                  <img
+                    src="images/person4.jpg"
+                    alt="UI Desinger"
+                    width="270"
+                    height="260" />
+
+                  <figcaption>
+                    <p class="pic-people">John Doe</p>
+                    <p class="ppl-jobs">UI Desinger</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </section>
+          </div>
         </div>
-        <section>
-          <p class="head-text">Nasz zespół</p>
-          <figure class="team_card">
-            <img
-              src="images/person1.jpg"
-              alt="Product Desinger"
-              width="270"
-              height="260" />
-
-            <figcaption>
-              <p class="pic-people">John Doe</p>
-              <p class="ppl-jobs">Product Desinger</p>
-            </figcaption>
-          </figure>
-          <figure class="team_card">
-            <img
-              src="images/person2.jpg"
-              alt="Frontend Developer"
-              width="270"
-              height="260" />
-
-            <figcaption>
-              <p class="pic-people">John Doe</p>
-              <p class="ppl-jobs">Frontend Developer</p>
-            </figcaption>
-          </figure>
-          <figure class="team_card">
-            <img
-              src="images/person3.jpg"
-              alt="Marketing"
-              width="270"
-              height="260" />
-
-            <figcaption>
-              <p class="pic-people">John Doe</p>
-              <p class="ppl-jobs">Marketing</p>
-            </figcaption>
-          </figure>
-          <figure class="team_card">
-            <img
-              src="images/person4.jpg"
-              alt="UI Desinger"
-              width="270"
-              height="260" />
-
-            <figcaption>
-              <p class="pic-people">John Doe</p>
-              <p class="ppl-jobs">UI Desinger</p>
-            </figcaption>
-          </figure>
-        </section>
       </main>
-      <footer class="footer-bg">
+      <footer class="footer-bg section">
         <a href="#main" class="footer-logo"
           ><p><span class="webname">Web</span>Studio</p>
         </a>

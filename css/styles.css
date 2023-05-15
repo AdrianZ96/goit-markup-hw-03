@@ -221,6 +221,7 @@ a{
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--mainfontcolor);
+  margin-top: 0;
   margin-bottom: 50px;
 }
 .pic-people {
@@ -254,6 +255,10 @@ a{
   gap: 15px;
   margin: 0 auto;
 }
+.img-padding{
+  padding-right: 15px;
+  padding-left: 15px;
+}
 .about {
   display: flex;
   list-style: none;
@@ -282,6 +287,7 @@ a{
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin: 0;
+  padding-right: 30px;
 }
 .pic-box {
   display: flex;

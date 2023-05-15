@@ -167,6 +167,9 @@ a{
   margin-bottom: 50px;
 }
 /** Wnętrze Stron **/
+.upper-body{
+  background-color: #fff;
+}
 .pic-title {
   font-size: 18px;
   font-weight: 700;

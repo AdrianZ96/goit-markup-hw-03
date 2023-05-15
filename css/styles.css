@@ -123,6 +123,10 @@ a{
   gap: 25px;
   margin: 0;
 }
+.hd-section{
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 /** Przyciski w Main **/
 .navbutton {
   font-weight: 500;
@@ -326,4 +330,12 @@ a{
   justify-content: space-around;
   flex-direction: column;
   margin: 0;
+}
+.section-ft{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.ft-margin{
+  margin-top: 0;
+  margin-bottom: 0;
 }

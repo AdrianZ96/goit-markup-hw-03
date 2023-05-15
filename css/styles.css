@@ -24,7 +24,6 @@ a{
 .container {
   margin: 0 auto;
   width: 1200px;
-  opacity: 0.8;
 }
 .section {
   padding-top: 94px;
@@ -164,7 +163,8 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  column-gap: 8px;
+  margin-bottom: 50px;
 }
 /** Wnętrze Stron **/
 .pic-title {
@@ -253,7 +253,6 @@ a{
   justify-content: center;
   align-items: center;
   gap: 15px;
-  margin: 0 auto;
 }
 .img-padding{
   padding-right: 15px;
@@ -286,20 +285,16 @@ a{
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin: 0;
-  padding-right: 30px;
+  margin: 0 15px;
 }
 .pic-box {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   align-items: center;
-  margin: 0 auto;
-  background: #e5e5e5;
+  background: #fff;;
 }
 .main-content-color {
-  background: #e5e5e5;
-  margin: 0 auto;
+  background: #fff;
   padding-top: 1px; /** usuwa miejsce pomiędzy header a main **/
 }
 /** Zawartość Stopki **/
@@ -327,6 +322,5 @@ a{
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding-left: 215px;
   margin: 0;
 }

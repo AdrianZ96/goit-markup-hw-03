@@ -100,7 +100,6 @@ a {
   letter-spacing: 0.02em;
   color: var(--shadowfontcolor);
   text-decoration: none;
-  margin-left: 50px;
 }
 .contacts:hover,
 .contacts:focus {
@@ -109,8 +108,9 @@ a {
 .list-style {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 50px;
   margin: 0;
+  padding: 0;
 }
 .hd-section {
   padding-top: 24px;
@@ -307,6 +307,9 @@ a {
   font-style: normal;
   letter-spacing: 0.03em;
   color: var(--darkbd-fontcolor);
+  padding-top: 20px;
+  padding-bottom: 4.5px;
+  margin: 0;
 }
 .footer-bg {
   background: #2f303a;
@@ -322,4 +325,8 @@ a {
 .ft-margin {
   margin-top: 0;
   margin-bottom: 0;
+}
+.contacts-ft{
+  padding-block: 4.5px;
+  margin: 0;
 }

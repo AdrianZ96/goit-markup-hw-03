@@ -8,10 +8,8 @@
     <meta name="keywords" content="próba,hm,figma,goit" />
 
     <meta http-equiv="X-Ua-Compatible" content="IE=edge" />
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link href="./css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,95 +18,96 @@
   </head>
 
   <body>
-    <header class="head-container hd-section container">
-      <nav class="menu">
-        <menu class="header-nav">
+    <div class="container nav-border">
+      <header class="head-container hd-section">
+        <nav class="menu">
+          <menu class="header-nav">
+            <li>
+              <a href="index.html"
+                ><p class="head-logo"><span class="webname">Web</span>Studio</p>
+              </a>
+            </li>
+            <li><a href="#example" class="submenu">Agencja</a></li>
+            <li><a href="portfolio.html" class="submenu">Portfolio</a></li>
+            <li><a href="#contact" class="submenu">Kontakt</a></li>
+          </menu>
+        </nav>
+        <ul class="list-style">
           <li>
-            <a href="index.html"
-              ><p class="head-logo"><span class="webname">Web</span>Studio</p>
-            </a>
+            <a href="mailto:info@devstudio.com" target="_blank" class="contacts"
+              >info@devstudio.com</a
+            >
           </li>
-          <li><a href="#example" class="submenu">Agencja</a></li>
-          <li><a href="portfolio.html" class="submenu">Portfolio</a></li>
-          <li><a href="#contact" class="submenu">Kontakt</a></li>
-        </menu>
-      </nav>
-      <ul class="list-style">
-        <li>
-          <a href="mailto:info@devstudio.com" target="_blank" class="contacts"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:48111111111" class="contacts"> +48 111 111 111</a>
-        </li>
-      </ul>
-    </header>
+          <li>
+            <a href="tel:48111111111" class="contacts"> +48 111 111 111</a>
+          </li>
+        </ul>
+      </header>
+    </div>
     <main>
-      <div class="mainbgcolor section">
-        <h1 class="main-header">EFEKTOWNE ROZWIĄZANIE DLA WASZEGO BIZNESU</h1>
+      <div class="mainbgcolor">
+        <h1 class="main-header">
+          Efektowne rozwiazania <br />
+          dla waszego biznesu
+        </h1>
         <button type="button" class="mainbtn">Zamów usługę</button>
       </div>
       <div class="body-style">
         <div class="upper-body section">
           <section>
-            <ul class="about">
+            <ul class="about container">
               <li>
                 <h4 class="text-title">Lorem ipsum</h4>
                 <p class="text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Laboriosam expedita id blanditiis, sit ullam porro illum
-                  suscipit veritatis? Repellat.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
                 </p>
               </li>
 
               <li>
                 <h4 class="text-title">Lorem ipsum</h4>
                 <p class="text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Laboriosam expedita id blanditiis, sit ullam porro illum
-                  suscipit veritatis? Repellat.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
                 </p>
               </li>
 
               <li>
                 <h4 class="text-title">Lorem ipsum</h4>
                 <p class="text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Laboriosam expedita id blanditiis, sit ullam porro illum
-                  suscipit veritatis? Repellat.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
                 </p>
               </li>
 
               <li>
                 <h4 class="text-title">Lorem ipsum</h4>
                 <p class="text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Laboriosam expedita id blanditiis, sit ullam porro illum
-                  suscipit veritatis? Repellat.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
                 </p>
               </li>
             </ul>
           </section>
-          <section class="img-bg section">
+          <section class="img-bg">
             <h2 class="head-text">Czym się zajmujemy</h2>
             <div class="images">
               <img
                 src="images/work1.jpg"
                 alt="Kodowanie"
-                width="400"
+                width="370"
                 height="294"
                 class="img-padding" />
               <img
                 src="images/work2.jpg"
                 alt="Debugowanie aplikacji"
-                width="400"
+                width="370"
                 height="294"
                 class="img-padding" />
               <img
                 src="images/work3.jpg"
                 alt="Projektowanie stylów"
-                width="400"
+                width="370"
                 height="294"
                 class="img-padding" />
             </div>
@@ -172,7 +171,7 @@
     <footer class="footer-bg section-ft">
       <div class="container">
         <a href="index.html" class="footer-logo"
-          ><p><span class="webname">Web</span>Studio</p>
+          ><p class="ft-margin"><span class="webname">Web</span>Studio</p>
         </a>
         <address id="contact">
           <p class="footaddres">m.Warszawa, Aleje Jerozolimskie 21</p>

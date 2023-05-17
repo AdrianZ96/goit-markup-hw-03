@@ -5,11 +5,6 @@
   --darkbd-fontcolor: #fff;
   --shadowfontcolor: #757575;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 /**Globalne style **/
 body {
   font-family: "Roboto", sans-serif;
@@ -17,8 +12,9 @@ body {
   color: var(--mainfontcolor);
   margin: 0 auto;
   max-width: 1600px;
+  font-size: 16px;
 }
-a{
+a {
   text-decoration: none;
 }
 .container {
@@ -26,8 +22,7 @@ a{
   width: 1200px;
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-block: 93px;
 }
 /**Logo w stópce i w header **/
 .footer-logo {
@@ -46,12 +41,9 @@ a{
   font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-align: left;
   color: black;
-  text-decoration: none;
-  width: 145px;
-  height: 31px;
-  margin: 0 93px 0 0;
+  margin: 0;
+  margin-right: 93px;
 }
 .webname {
   color: var(--focus-active-hovercolor);
@@ -60,13 +52,11 @@ a{
   font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-align: left;
 }
 /** Header (Nawigacja górna strony) **/
 .head-container {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
   align-items: baseline;
 }
 .header-nav {
@@ -81,7 +71,6 @@ a{
   border-bottom: 1px solid #ececec;
 }
 .menu {
-  text-decoration: none;
   display: flex;
   gap: 23px;
   align-items: baseline;
@@ -111,7 +100,7 @@ a{
   letter-spacing: 0.02em;
   color: var(--shadowfontcolor);
   text-decoration: none;
-  margin-right: 50px;
+  margin-left: 50px;
 }
 .contacts:hover,
 .contacts:focus {
@@ -123,24 +112,19 @@ a{
   gap: 25px;
   margin: 0;
 }
-.hd-section{
+.hd-section {
   padding-top: 24px;
   padding-bottom: 25px;
 }
 /** Przyciski w Main **/
 .navbutton {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.625;
   background-color: #f5f4fa;
-  border-radius: 4px;
   cursor: pointer;
   border: none;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  padding: 6px 22px;
   border-radius: 4px;
-  width: 121px;
-  height: 38px;
 }
 .navbutton:hover,
 .navbutton:focus {
@@ -154,24 +138,23 @@ a{
   background-color: var(--focus-active-hovercolor);
   color: var(--darkbd-fontcolor);
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.875;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  width: 200px;
-  height: 50px;
+  padding: 10px 41px;
+  margin-bottom: 200px;
 }
 .pagenav {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 8px;
+  gap: 8px;
   margin-bottom: 50px;
 }
 /** Wnętrze Stron **/
-.upper-body{
+.upper-body {
   background-color: #fff;
 }
 .pic-title {
@@ -181,28 +164,27 @@ a{
   letter-spacing: 0.06em;
   text-align: left;
   color: var(--mainfontcolor);
+  margin: 0;
 }
 
 .pic-text {
-  font-size: 16px;
   line-height: 1.875;
   color: var(--shadowfontcolor);
   background-color: #fff;
+  padding: 20px 24px;
 }
 .pictures {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-right: auto;
-  margin-left: auto;
-  gap: 30px;
+  margin: 0;
   background: #ffffff;
-  border-bottom: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 .mainbgcolor {
   background: #2f303a;
-  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,6 +196,7 @@ a{
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin: 0;
 }
 .text {
   font-size: var(--mainfont-size);
@@ -233,13 +216,14 @@ a{
 }
 .pic-people {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.1875;
   letter-spacing: 0.03em;
   color: var(--mainfontcolor);
+  margin: 0;
+  padding-top: 30px;
+  text-align: center;
 }
 .ppl-jobs {
-  font-size: 16px;
   line-height: 1.1875;
   letter-spacing: 0.03em;
   color: var(--shadowfontcolor);
@@ -252,25 +236,26 @@ a{
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--darkbd-fontcolor);
-  padding-right: 452px;
-  padding-left: 452px;
+  margin: 0;
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 .images {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 30px;
 }
-.img-padding{
-  padding-right: 15px;
-  padding-left: 15px;
+.img-bg {
+  padding-top: 93px;
 }
 .about {
   display: flex;
   list-style: none;
   justify-content: center;
   align-items: center;
-  margin: 0 215px;
+  gap: 30px;
+  padding: 0;
 }
 .workers {
   display: flex;
@@ -288,7 +273,6 @@ a{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -298,11 +282,11 @@ a{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background: #fff;;
+  background: #fff;
+  gap: 30px;
 }
 .main-content-color {
   background: #fff;
-  padding-top: 1px; /** usuwa miejsce pomiędzy header a main **/
 }
 /** Zawartość Stopki **/
 .foot {
@@ -331,11 +315,11 @@ a{
   flex-direction: column;
   margin: 0;
 }
-.section-ft{
+.section-ft {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.ft-margin{
+.ft-margin {
   margin-top: 0;
   margin-bottom: 0;
 }

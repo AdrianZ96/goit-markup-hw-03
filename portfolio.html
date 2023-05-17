@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link href="./css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,32 +14,34 @@
       rel="stylesheet" />
   </head>
   <body>
-    <header class="head-container hd-section container nav-border">
-      <nav class="menu">
-        <menu class="header-nav">
+    <div class="container nav-border">
+      <header class="head-container hd-section">
+        <nav class="menu">
+          <menu class="header-nav">
+            <li>
+              <a href="index.html"
+                ><p class="head-logo"><span class="webname">Web</span>Studio</p>
+              </a>
+            </li>
+            <li><a href="#example" class="submenu">Agencja</a></li>
+            <li><a href="portfolio.html" class="submenu">Portfolio</a></li>
+            <li><a href="#contact" class="submenu">Kontakt</a></li>
+          </menu>
+        </nav>
+        <ul class="list-style">
           <li>
-            <a href="index.html"
-              ><p class="head-logo"><span class="webname">Web</span>Studio</p>
-            </a>
+            <a href="mailto:info@devstudio.com" target="_blank" class="contacts"
+              >info@devstudio.com</a
+            >
           </li>
-          <li><a href="#example" class="submenu">Agencja</a></li>
-          <li><a href="portfolio.html" class="submenu">Portfolio</a></li>
-          <li><a href="#contact" class="submenu">Kontakt</a></li>
-        </menu>
-      </nav>
-      <ul class="list-style">
-        <li>
-          <a href="mailto:info@devstudio.com" target="_blank" class="contacts"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:48111111111" class="contacts"> +48 111 111 111</a>
-        </li>
-      </ul>
-    </header>
-      <main class="main-content-color">
-        <div class="section">
+          <li>
+            <a href="tel:48111111111" class="contacts"> +48 111 111 111</a>
+          </li>
+        </ul>
+      </header>
+    </div>
+    <main class="main-content-color">
+      <div class="section">
         <ul class="pagenav">
           <li>
             <button type="button" class="navbutton">Wszystkie</button>
@@ -125,25 +125,25 @@
           </figure>
         </div>
       </div>
-      </main>
+    </main>
 
-      <footer class="footer-bg section-ft">
-        <div class="container">
-          <a href="index.html" class="footer-logo"
-            ><p class="ft-margin"><span class="webname">Web</span>Studio</p>
+    <footer class="footer-bg section-ft">
+      <div class="container">
+        <a href="index.html" class="footer-logo"
+          ><p class="ft-margin"><span class="webname">Web</span>Studio</p>
+        </a>
+        <address id="contact">
+          <p class="footaddres">m.Warszawa, Aleje Jerozolimskie 21</p>
+
+          <a href="mailto:info@devstudio.com" target="_blank" class="foot">
+            <p>info@devstudio.com</p>
           </a>
-          <address id="contact">
-            <p class="footaddres">m.Warszawa, Aleje Jerozolimskie 21</p>
-  
-            <a href="mailto:info@devstudio.com" target="_blank" class="foot">
-              <p>info@devstudio.com</p>
-            </a>
-  
-            <a href="tel:48111111111" class="foot">
-              <p>+48 111 111 111</p>
-            </a>
-          </address>
-        </div>
-      </footer>
+
+          <a href="tel:48111111111" class="foot">
+            <p>+48 111 111 111</p>
+          </a>
+        </address>
+      </div>
+    </footer>
   </body>
 </html>
